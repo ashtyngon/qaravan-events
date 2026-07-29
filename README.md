@@ -1,2 +1,17 @@
-# qaravan-events
-QARAVAN monthly events page for events.qaravan.org
+# QARAVAN Events — events.qaravan.org
+
+Страница со всеми событиями месяца для ссылки в Instagram bio: **https://events.qaravan.org**
+
+Хостинг: GitHub Pages (этот репозиторий, ветка `main`). Домен: CNAME-запись `events → ashtyngon.github.io` в DNS-настройках qaravan.org (Wix).
+
+## Как обновить события
+
+1. Откройте [`index.html`](index.html) и нажмите карандаш («Edit this file»).
+2. Меняйте только текст в кавычках в списке `EVENTS` (в начале нового месяца — ещё `MONTH_BADGE` и `MONTH_TITLE`). Одно событие — один блок `{ ... }`: удалить — сотрите блок, добавить — скопируйте соседний и поправьте.
+3. Нажмите «Commit changes». Сайт обновится сам через 1–2 минуты.
+
+Подробная инструкция продублирована комментарием прямо в `index.html`, перед списком событий.
+
+## Кто может редактировать
+
+Владелец репозитория и приглашённые коллабораторы (Settings → Collaborators → Add people, нужен аккаунт GitHub). Ещё проще — попросить Claude: он подтянет актуальные события с monday.com и обновит страницу сам.

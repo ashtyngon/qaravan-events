@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>События QARAVAN — август 2026</title>
-<meta name="description" content="Все события QARAVAN в августе: паста, музей 9/11, квир-история Виллиджа, группа поддержки, кино, пляж, Bear Mountain и панель про убежище. Жмите и регистрируйтесь.">
-<meta property="og:title" content="События QARAVAN — август 2026">
+<meta name="description" content="Все события QARAVAN в этом месяце. Жмите на событие — внутри детали и регистрация.">
+<meta property="og:title" content="События QARAVAN">
 <meta property="og:description" content="Все события месяца в одном месте. Жмите и регистрируйтесь 🧡">
 <meta name="theme-color" content="#FAF4E8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,16 +26,17 @@
   .wrap{max-width:480px; margin:0 auto;}
   header{text-align:center; margin-bottom:22px;}
   .logo{
-    display:inline-block; background:#1f1f1f; border-radius:14px;
+    display:inline-block; background:#333333; border-radius:14px;
     padding:8px 18px 10px; font-weight:800; font-size:26px; letter-spacing:.5px;
   }
-  .logo span:nth-child(1){color:#E40303}
-  .logo span:nth-child(2){color:#FF8C00}
-  .logo span:nth-child(3){color:#FFD500}
-  .logo span:nth-child(4){color:#2E9E44}
-  .logo span:nth-child(5){color:#39A0ED}
-  .logo span:nth-child(6){color:#7B6CF6}
-  .logo span:nth-child(7){color:#C77DF3}
+  /* Фирменные цвета логотипа QARAVAN (сняты с оригинала на qaravan.org) */
+  .logo span:nth-child(1){color:#FFFFFF}
+  .logo span:nth-child(2){color:#FF3333}
+  .logo span:nth-child(3){color:#FF9933}
+  .logo span:nth-child(4){color:#F8F36E}
+  .logo span:nth-child(5){color:#66CC66}
+  .logo span:nth-child(6){color:#0099CC}
+  .logo span:nth-child(7){color:#7668AA}
   .badge{
     display:inline-block; margin-top:14px; background:var(--red); color:#fff;
     font-weight:800; font-size:12px; letter-spacing:1.5px; border-radius:999px;
@@ -52,9 +53,7 @@
   }
   .card:active{transform:scale(.985);}
   @media (hover:hover){ .card:hover{transform:translateY(-2px); box-shadow:0 2px 4px rgba(30,25,10,.07), 0 10px 24px rgba(30,25,10,.09);} }
-  .date{
-    flex:0 0 58px; text-align:center; font-weight:800;
-  }
+  .date{flex:0 0 58px; text-align:center; font-weight:800;}
   .date .num{font-size:26px; line-height:1; display:block;}
   .date .num.small{font-size:15px; line-height:1.25;}
   .date .dow{font-size:10px; letter-spacing:1.2px; color:var(--muted); font-weight:700; display:block; margin-top:3px;}
@@ -63,7 +62,6 @@
   .info .ru{display:block; color:var(--muted); font-size:13px; font-weight:600; margin-top:3px; line-height:1.35;}
   .info .meta{display:block; font-size:12px; font-weight:700; margin-top:5px; color:var(--ink); opacity:.75;}
   .arrow{margin-left:auto; flex:0 0 auto; color:var(--muted); font-weight:800;}
-  .c-orange{color:var(--orange)} .c-purple{color:var(--purple)} .c-blue{color:var(--blue)} .c-green{color:var(--green)} .c-red{color:var(--red)}
   footer{text-align:center; margin-top:26px; color:var(--muted); font-size:13px; font-weight:600;}
   footer a{color:var(--ink); font-weight:800; text-decoration:none;}
 </style>
@@ -72,94 +70,121 @@
 <div class="wrap">
   <header>
     <div class="logo"><span>q</span><span>a</span><span>r</span><span>a</span><span>v</span><span>a</span><span>n</span></div><br>
-    <span class="badge">AUGUST 2026</span>
-    <h1>События августа</h1>
+    <span class="badge" id="badge"></span>
+    <h1 id="title"></h1>
     <p class="sub">Жмите на событие — внутри детали и регистрация 🧡</p>
   </header>
-
-  <a class="card" href="https://partiful.com/e/wCQQnxGDkWSxgsp5FbxR">
-    <span class="date"><span class="num c-orange">1</span><span class="dow">СБ</span></span>
-    <span class="info">
-      <span class="title">Pasta-Making Master Class</span>
-      <span class="ru">Готовим орекьетте с нуля, мест всего 15</span>
-      <span class="meta">5:00 PM · Бушвик</span>
-    </span>
-    <span class="arrow">›</span>
-  </a>
-
-  <a class="card" href="https://partiful.com/e/i6yI4MnhRHYBkAEDmKAQ">
-    <span class="date"><span class="num c-purple">2</span><span class="dow">ВС</span></span>
-    <span class="info">
-      <span class="title">9/11 Memorial Museum Visit</span>
-      <span class="ru">Идём вместе, вход бесплатный для нью-йоркцев</span>
-      <span class="meta">4:00 PM · билет — заранее</span>
-    </span>
-    <span class="arrow">›</span>
-  </a>
-
-  <a class="card" href="https://partiful.com/e/bzdBwjr08VtbX5mWsufI">
-    <span class="date"><span class="num c-blue">3</span><span class="dow">ПН</span></span>
-    <span class="info">
-      <span class="title">LGBTQ+ History Walking Tour</span>
-      <span class="ru">Квир-история Нью-Йорка: Stonewall, Julius' и не только</span>
-      <span class="meta">7:00 PM · Greenwich Village</span>
-    </span>
-    <span class="arrow">›</span>
-  </a>
-
-  <a class="card" href="https://form.typeform.com/to/dbH75jNe">
-    <span class="date"><span class="num small c-green">6 · 12<br>20 · 26</span><span class="dow">ЧТ / СР</span></span>
-    <span class="info">
-      <span class="title">Support Group with Gina</span>
-      <span class="ru">Группа поддержки, вход по анкете</span>
-      <span class="meta">7:30 PM · Zoom</span>
-    </span>
-    <span class="arrow">›</span>
-  </a>
-
-  <a class="card" href="https://partiful.com/e/NGsRoEiKHozec7FFJYfF">
-    <span class="date"><span class="num c-red">9</span><span class="dow">ВС</span></span>
-    <span class="info">
-      <span class="title">United in Anger: A History of ACT UP</span>
-      <span class="ru">Кинопоказ о движении ACT UP, мест 15</span>
-      <span class="meta">6:00 PM · Бруклин</span>
-    </span>
-    <span class="arrow">›</span>
-  </a>
-
-  <a class="card" href="https://partiful.com/e/4bEHkQT0nAkQIIAcCT3U">
-    <span class="date"><span class="num c-blue">13</span><span class="dow">ЧТ</span></span>
-    <span class="info">
-      <span class="title">Beach Day: Rockaway</span>
-      <span class="ru">Пляжный день на The People's Beach</span>
-      <span class="meta">2:00 PM · Jacob Riis Park</span>
-    </span>
-    <span class="arrow">›</span>
-  </a>
-
-  <a class="card" href="https://partiful.com/e/9gIemtCpwA8zR7aCj1Yr">
-    <span class="date"><span class="num c-green">15</span><span class="dow">СБ</span></span>
-    <span class="info">
-      <span class="title">Bear Mountain Hike &amp; Swim</span>
-      <span class="ru">Хайк, обед на вершине и бассейн</span>
-      <span class="meta">сбор 8:10 AM · Port Authority</span>
-    </span>
-    <span class="arrow">›</span>
-  </a>
-
-  <a class="card" href="https://partiful.com/e/U2h85QFEd02MWl2phG5Y">
-    <span class="date"><span class="num c-purple">29</span><span class="dow">СБ</span></span>
-    <span class="info">
-      <span class="title">Asylum Interview Experience: Q&amp;A</span>
-      <span class="ru">Отвечают те, кто прошёл собеседование сам</span>
-      <span class="meta">5:00 PM · место скоро</span>
-    </span>
-    <span class="arrow">›</span>
-  </a>
-
+  <div id="list"></div>
   <footer>
     <a href="https://qaravan.org">qaravan.org</a> · русскоязычное ЛГБТК+ сообщество Нью-Йорка 🧡
   </footer>
 </div>
+
+<script>
+// ══════════════════════════════════════════════════════════════
+//  КАК ОБНОВИТЬ ЭТУ СТРАНИЦУ (инструкция для команды QARAVAN)
+//
+//  1. Откройте файл index.html в репозитории на GitHub
+//     и нажмите карандаш («Edit this file») справа сверху.
+//  2. Меняйте ТОЛЬКО текст в кавычках в списке EVENTS ниже
+//     (и, в начале месяца, MONTH_BADGE / MONTH_TITLE).
+//     Одно событие = один блок в фигурных скобках { ... }.
+//     • Удалить событие — сотрите его блок целиком (вместе с запятой).
+//     • Добавить — скопируйте любой блок и поправьте текст.
+//     • Несколько дат в одной карточке (как у группы поддержки):
+//       пишите date: "6 · 12<br>20 · 26" — <br> переносит строку.
+//  3. Нажмите зелёную кнопку «Commit changes» (дважды).
+//     Сайт events.qaravan.org обновится сам через 1–2 минуты.
+// ══════════════════════════════════════════════════════════════
+
+const MONTH_BADGE = "AUGUST 2026";
+const MONTH_TITLE = "События августа";
+
+const EVENTS = [
+  {
+    date: "1",
+    day: "СБ",
+    title: "Pasta-Making Master Class",
+    ru: "Готовим орекьетте с нуля, мест всего 15",
+    meta: "5:00 PM · Бушвик",
+    link: "https://partiful.com/e/wCQQnxGDkWSxgsp5FbxR"
+  },
+  {
+    date: "2",
+    day: "ВС",
+    title: "9/11 Memorial Museum Visit",
+    ru: "Идём вместе, вход бесплатный для нью-йоркцев",
+    meta: "4:00 PM · билет — заранее",
+    link: "https://partiful.com/e/i6yI4MnhRHYBkAEDmKAQ"
+  },
+  {
+    date: "3",
+    day: "ПН",
+    title: "LGBTQ+ History Walking Tour",
+    ru: "Квир-история Нью-Йорка: Stonewall, Julius' и не только",
+    meta: "7:00 PM · Greenwich Village",
+    link: "https://partiful.com/e/bzdBwjr08VtbX5mWsufI"
+  },
+  {
+    date: "6 · 12<br>20 · 26",
+    day: "ЧТ / СР",
+    title: "Support Group with Gina",
+    ru: "Группа поддержки, вход по анкете",
+    meta: "7:30 PM · Zoom",
+    link: "https://form.typeform.com/to/dbH75jNe"
+  },
+  {
+    date: "9",
+    day: "ВС",
+    title: "United in Anger: A History of ACT UP",
+    ru: "Кинопоказ о движении ACT UP, мест 15",
+    meta: "6:00 PM · Бруклин",
+    link: "https://partiful.com/e/NGsRoEiKHozec7FFJYfF"
+  },
+  {
+    date: "13",
+    day: "ЧТ",
+    title: "Beach Day: Rockaway",
+    ru: "Пляжный день на The People's Beach",
+    meta: "2:00 PM · Jacob Riis Park",
+    link: "https://partiful.com/e/4bEHkQT0nAkQIIAcCT3U"
+  },
+  {
+    date: "15",
+    day: "СБ",
+    title: "Bear Mountain Hike & Swim",
+    ru: "Хайк, обед на вершине и бассейн",
+    meta: "сбор 8:10 AM · Port Authority",
+    link: "https://partiful.com/e/9gIemtCpwA8zR7aCj1Yr"
+  },
+  {
+    date: "29",
+    day: "СБ",
+    title: "Asylum Interview Experience: Q&A",
+    ru: "Отвечают те, кто прошёл собеседование сам",
+    meta: "5:00 PM · место скоро",
+    link: "https://partiful.com/e/U2h85QFEd02MWl2phG5Y"
+  }
+];
+
+// ── Дальше ничего менять не нужно ─────────────────────────────
+const COLORS = ["#E8890C", "#7B4FD8", "#2196D9", "#2E9E44", "#E23838"];
+document.getElementById("badge").textContent = MONTH_BADGE;
+document.getElementById("title").textContent = MONTH_TITLE;
+document.title = "События QARAVAN — " + MONTH_BADGE.toLowerCase();
+document.getElementById("list").innerHTML = EVENTS.map((e, i) => {
+  const color = COLORS[i % COLORS.length];
+  const small = e.date.length > 3 ? " small" : "";
+  return `<a class="card" href="${e.link}">
+    <span class="date"><span class="num${small}" style="color:${color}">${e.date}</span><span class="dow">${e.day}</span></span>
+    <span class="info">
+      <span class="title">${e.title}</span>
+      <span class="ru">${e.ru}</span>
+      <span class="meta">${e.meta}</span>
+    </span>
+    <span class="arrow">›</span>
+  </a>`;
+}).join("");
+</script>
 </body>
 </html>
